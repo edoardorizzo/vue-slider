@@ -18,4 +18,29 @@ createApp({
       }
     }
   },
+  methods: {
+    next(){
+      console.log('Next');
+      this.activeImage++
+      if(this.activeImage === this.movie.images.length){
+        this.activeImage = 0
+      }
+
+    },
+    prev(){
+      console.log('Prev');
+      this.activeImage--
+      if (this.activeImage < 0) {
+        this.activeImage = this.movie.images.length - 1
+      }
+    },
+    changeImage(index){
+      this.activeImage = index
+
+    }
+  },
+  mounted(){
+    console.log('Mounted');
+    console.log(this.movie);
+  }
 }).mount('#app')
