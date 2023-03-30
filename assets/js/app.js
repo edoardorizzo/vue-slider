@@ -5,7 +5,12 @@ createApp({
     return {
       activeImage: 0,
       movie: {
-        title: 'Spider Man',
+        title: [
+          'Spider Man',
+          // 'Rechet',
+          // 'Fortnite',
+          // 'Stray',
+        ],
         category: 'Action',
         duration: 60,
         images: [

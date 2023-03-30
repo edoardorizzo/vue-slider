@@ -1,5 +1,4 @@
-.container-sm{
-    max-width: 600px;
+.container-md{
 	margin: auto;
 }
     
@@ -28,6 +27,6 @@
 .btn{
     z-index: 999999;
     background-color: white;
-    top: 18%;
+    top: 23%;
     margin: 24px;
 }
