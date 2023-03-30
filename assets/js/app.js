@@ -7,9 +7,9 @@ createApp({
       movie: {
         title: [
           'Spider Man',
-          // 'Rechet',
-          // 'Fortnite',
-          // 'Stray',
+          'Rechet',
+          'Fortnite',
+          'Stray',
         ],
         category: 'Action',
         duration: 60,
@@ -45,7 +45,7 @@ createApp({
     }
   },
   mounted(){
-    console.log('Mounted');
-    console.log(this.movie);
+    setInterval(this.next, 2000)
+
   }
 }).mount('#app')
